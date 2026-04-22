@@ -3,20 +3,42 @@
   <head>
 
 <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+<script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@2.1.1/dist/aframe-extras.min.js"></script>
-    
   </head>
     <body>
     <a-scene>
       <a-sky color="lightblue"></a-sky>
       
-       <!-- Put this inside the <a-scene> -->
       <a-entity 
-      ply-model="src:dog.ply"
-      position="0 1 -2"
-      rotation="-90 0 90"
+      ply-model="src:"
+      position="0 0 -2"
+      rotation="0 0 0"
       ></a-entity>
-                 
+
+
+      <a-entity ply-model="src: grass RGG.ply" postion="0 0 0" rotation="-90 0 0" scale="1 1 1" position="-15.10425 -2.14473 15.07764"></a-entity>
+
+<a-entity ply-model="src: BUSH.ply" postion="0 0 0" rotation="-90 0 0" scale="1 1 1" position="-15.10425 -2.14473 15.07764"></a-entity>
+
+      <a-entity ply-model="src: TREE.ply" postion="0 -1.520 -3.077" rotation="-90 0 0" scale="0.6 0.6 0.6" position="-8.966 -1.09198 8.54289"></a-entity>
+      
+
+      <a-entity ply-model="src: Broken tree.ply" postion="-13.240 -0.712 10.046" rotation="-90 0 0" scale="0.4 0.4 0.4" position="-13.764 -0.73284 7.96011"></a-entity>           
+      
+      <a-entity ply-model="src: TREE.ply" postion="0 -1.520 -3.077" rotation="-90 0 0" scale="0.7 0.7 0.7" position="-15.493 -1.27148 15.22923"></a-entity>
+
+      <a-entity ply-model="src: Rat.ply" postion="0 -1.520 -3.077" rotation="-89.99963750135457 180 0" position="-7.787 -1.74081 3.47242"
+      animation="
+      property: position;
+      from :-7.787 -1.74081 3.47242;
+      to:-5.194 -1.741 3.472
+      dur:1200;
+      loop:true;
+      dir:alternate;"
+      ></a-entity>
+
+      <a-entity ply-model="src: Wall.ply" postion="0 0 0" rotation="-90 0 0" scale="3.2 3.2 3.2" position="-15.10425 -6.87163 15.07764"></a-entity>
     </a-scene>
   </body>
 </html>
